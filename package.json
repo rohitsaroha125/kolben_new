@@ -1,0 +1,26 @@
+{
+  "name": "kolben",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "4.15.2",
+    "express-fileupload": "^0.4.0",
+    "fs": "latest",
+    "jsonfile": "^4.0.0",
+    "mammoth": "^1.4.6",
+    "mongodb": "^3.0.3",
+    "multer": "^1.3.0",
+    "nodemon": "latest",
+    "request": "latest",
+    "request-promise": "latest"
+  }
+}

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--
+    Document Title
+    =============================================
+  -->
+  <title>Kolben Hydraulics | News</title>
+    <!--
+    Favicons
+    =============================================
+  -->
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="assets/images/favicons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+    <!--
+    Stylesheets
+    =============================================
+
+  -->
+  <!-- Default stylesheets-->
+  <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Template specific stylesheets-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Volkhov:400i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+  <link href="assets/lib/animate.css/animate.css" rel="stylesheet">
+  <link href="assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/lib/et-line-font/et-line-font.css" rel="stylesheet">
+  <link href="assets/lib/flexslider/flexslider.css" rel="stylesheet">
+  <link href="assets/lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+  <link href="assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
+  <!-- Main stylesheet and color file-->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
+  <style>
+  .about-page-header{
+    padding:250px 0px;
+  }
+  p{
+    font-size: 1.1em !important;
+  }
+  h5{
+    font-size:1.3em !important;
+  }
+  .b-img img{
+    max-height:400px !important;
+    max-width: 400px !important;
+  }
+</style>
+</head>
+<body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+  <main>
+    <div class="page-loader">
+      <div class="loader">Loading...</div>
+    </div>
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-left" href="index.html"><img style="padding-left:10px; padding-bottom: 2px; padding-top: 2px;" src="assets/images/logo-1.png"></img></a>
+        </div>
+        <div class="collapse navbar-collapse" id="custom-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="section-scroll" href="about.html">About us</a></li>
+            <li><a class="section-scroll" href="product">Products</a></li>
+            <li><a class="section-scroll" href="services.html">Services</a></li>
+            <li><a class="section-scroll" href="applications.html">Applications</a></li>
+            <li><a class="section-scroll active" href="#totop">News</a></li>
+            <li><a class="section-scroll" href="contact.html">Contact</a></li>
+            <li><a class="section-scroll" href="login.html">Log In</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="main">
+      <section class="module bg-dark-60 about-page-header" data-background="assets/images/news_bg.jpg">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+              <h2 class="module-title font-alt">News</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+
+        <div class="business second">
+          <% var count=0;
+          if(news.length == 0){
+                    %>
+              <div class="business-inner">
+            <div class="col-md-6 b-img"><a href="#"><img class="img-responsive" src="assets/images/landing/Kolben.png" alt=""/></a></div>
+            <div class="col-md-6 b-text">
+              <h5><a href="single.html">Check back for more news later!</a></h5>
+              <p>Please check back for more news from Kolben Hydraulics later.</p>
+              <a class="read-nob">Kolben Hydraulics</a><a class="read"><i>27th January 2019</i></a><br>
+            </div>
+            <div class="clearfix"></div>
+            <div class="business-bottom-content">
+            </div>
+          <% } else {
+          news.forEach(function(article){ %>
+          <div class="business-inner <% if(count>0){ %> two <% } %>">
+            <div class="col-md-6 b-img"><img class="img-responsive" src=<%= article.image %> alt=""/></div>
+            <div class="col-md-6 b-text">
+              <h5><a href="single.html"><%= article.title %></a></h5>
+              <p><%= article.desc %></p>
+              <a class="read-nob"><%= article.author %></a><a class="read"><i><%= article.date %></i></a><br>
+            </div>
+            <div class="clearfix"></div>
+            <div class="business-bottom-content <% if(count>0){ %> second <% } %>">
+            </div>
+          </div>
+          <% count++;
+        })  
+        }
+        %>
+        </div>
+        <!-- <div class="business-inner two"> -->
+          <!-- <div class="col-md-6 b-img"><a href="single.html"><img class="img-responsive" src="assets/images/news.jpg" alt=""/></a></div>
+          <div class="col-md-6 b-text">
+            <h5><a href="single.html">SOME TITLE OF THE NEWS ARTICLE </a></h5>
+
+            <p>Short description of the news article that'll let users know what the article is about and stuff</p>
+            <a class="read" href="single.html">Read More</a>
+          </div>
+          <div class="clearfix"></div>
+          <div class="business-bottom-content second">
+          </div>
+        </div>
+        <div class="business-inner two">
+          <div class="col-md-6 b-img"><a href="single.html"><img class="img-responsive" src="assets/images/news.jpg" alt=""/></a></div>
+          <div class="col-md-6 b-text">
+            <h5><a href="single.html">SOME TITLE OF THE NEWS ARTICLE </a></h5>
+
+            <p>Short description of the news article that'll let users know what the article is about and stuff</p>
+            <a class="read" href="single.html">Read More</a>
+          </div>
+          <div class="clearfix"></div>
+          <div class="business-bottom-content second">
+          </div>
+        </div> -->
+
+      </div>
+
+
+
+
+      <!--//business-->
+
+      <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+    </div>
+
+    <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+
+  </div>
+
+</main>
+
+
+</div>
+
+
+
+
+</div>
+
+<div class="module-small bg-dark">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="widget">
+          <h5 class="widget-title font-alt">Kolben</h5>
+          <p>Packaged solutions and services for a range of applications.</p>
+          <p>Phone:<a href="tel:+91-80-29724222"> +91-80-29724222</a></p>
+          <p>Email:<a href="mailto: marketingsupport@kolbenhydraulics.com">  marketingsupport@kolbenhydraulics.com</a></p>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="widget">
+          <h5 class="widget-title font-alt">Quick Links</h5>
+          <ul class="icon-list">
+            <div class="container">
+              <li><a href="index.html">Home </a></li>
+              <li><a href="about.html">About Us </a></li>
+              <li><a href="products">Products </a></li>
+              <li><a href="services.html">Services </a></li>
+              <li><a href="applications.html">Applications</a></li>
+              <li><a href="#totop">News </a></li>
+              <li><a href="contact.html">Contact </a></li>
+              <li><a href="login.html">Login </a></li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="divider-d">
+
+<footer class="footer bg-dark">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p class="copyright font-alt">&copy; 2019&nbsp;Kolben Hydraulics Ltd., All Rights Reserved. Design by <a href="http://boilerplate.in" target="_blank">boilerplate</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+<div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>   </main>
+    <!--
+    JavaScripts
+    =============================================
+  -->
+  <script src="assets/lib/jquery/dist/jquery.js"></script>
+  <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="assets/lib/wow/dist/wow.js"></script>
+  <script src="assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
+  <script src="assets/lib/isotope/dist/isotope.pkgd.js"></script>
+  <script src="assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
+  <script src="assets/lib/flexslider/jquery.flexslider.js"></script>
+  <script src="assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
+  <!-- <script src="assets/lib/smoothscroll.js"></script> -->
+  <script src="assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
+  <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
+  <script src="assets/js/plugins.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

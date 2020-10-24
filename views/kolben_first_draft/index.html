@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--
+    Document Title
+    =============================================
+  -->
+  <title>Kolben Hydraulics</title>
+    <!--
+    Favicons
+    =============================================
+  -->
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="assets/images/favicons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+    <!--
+    Stylesheets
+    =============================================
+
+  -->
+  <!-- Default stylesheets-->
+  <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Template specific stylesheets-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Volkhov:400i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+  <link href="assets/lib/animate.css/animate.css" rel="stylesheet">
+  <link href="assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/lib/et-line-font/et-line-font.css" rel="stylesheet">
+  <link href="assets/lib/flexslider/flexslider.css" rel="stylesheet">
+  <link href="assets/lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+  <link href="assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
+  <link href="assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
+  <!-- Main stylesheet and color file-->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
+  <style>
+  .vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  /* Slideshow container */
+  .slideshow-container {
+    /*max-width: 1000px;*/
+    position: relative;
+    margin: auto;
+  }
+
+  /* Hide the images by default */
+  /*.mySlides {
+    display: none;
+    }*/
+
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      /*font-size: 15px;*/
+      padding: 8px 12px;
+      position: absolute;
+      top: 40%;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+  </style>
+</head>
+<body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+  <main>
+
+    <div class="page-loader">
+      <div class="loader">Loading...</div>
+    </div>
+
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-left" href="index.html"><img style="padding-left:10px; padding-bottom: 2px; padding-top: 2px;" src="assets/images/logo-1.png"></img></a>
+        </div>
+        <div class="collapse navbar-collapse" id="custom-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="active" href="#totop">Home</a></li>
+            <li><a class="section-scroll" href="about.html">About us</a></li>
+            <li><a class="section-scroll" href="product">Products</a></li>
+            <li><a class="section-scroll" href="services.html">Services</a></li>
+            <li><a class="section-scroll" href="applications.html">Applications</a></li>
+            <li><a class="section-scroll" href="news">News</a></li>
+            <li><a class="section-scroll" href="contact.html">Contact</a></li>
+            <li><a class="section-scroll" href="login">Log In</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Slideshow container -->
+    <div style="margin-top: 50px;" class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides">
+        <div class="numbertext">1 / 3</div>
+        <img src="assets/images/landing/application.jpg" style="width:100%; height: 100%;">
+        <div style="position: absolute; top: 50%; left: 45%;">
+          <span style="font-weight: bold; display: block; text-align: center; padding-bottom: 10px; color: white; font-size: 25px;" class="font-alt mb-40">Applications</span>
+          <a style="border: 3px solid rgba(255, 255, 255, 0.75); color: #fff;text-transform: uppercase; letter-spacing: 2px; font-size: 11px; padding: 8px 37px; font-weight: bold;" href="applications.html" target="_blank">Learn More</a>
+        </div>
+        <!-- <button style="position: absolute; top: 50%; left: 50%;">Click here</button> -->
+        <!-- <div style="font-weight: bold;" class="text font-alt mb-40 titan-title-size-3">Applications</div> -->
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 3</div>
+        <img src="assets/images/landing/Product.jpg" style="width:100%">
+        <div style="position: absolute; top: 50%; left: 45%;">
+          <span style="font-weight: bold; display: block; text-align: center; padding-bottom: 10px; color: white; font-size: 25px;" class="font-alt mb-40">Products</span>
+          <a style="border: 3px solid rgba(255, 255, 255, 0.75); color: #fff;text-transform: uppercase; letter-spacing: 2px; font-size: 11px; padding: 8px 37px; font-weight: bold;" href="product" target="_blank">Learn More</a>
+        </div>
+        <!-- <div class="text">Caption Two</div> -->
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 3</div>
+        <img src="assets/images/landing/Service.jpg" style="width:100%">
+        <div style="position: absolute; top: 50%; left: 45%;">
+          <span style="font-weight: bold; display: block; text-align: center; padding-bottom: 10px; color: white; font-size: 25px;" class="font-alt mb-40">Services</span>
+          <a style="border: 3px solid rgba(255, 255, 255, 0.75); color: #fff;text-transform: uppercase; letter-spacing: 2px; font-size: 11px; padding: 8px 37px; font-weight: bold;" href="services.html" target="_blank">Learn More</a>
+        </div>
+        <!-- <div class="text">Caption Three</div> -->
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+
+    <!-- <section class="home-section home-parallax home-fade home-full-height" id="home">
+      <div class="hero-slider">
+        <ul class="slides">
+          <li class="bg-dark-30 bg-dark" style="background-image:url(assets/images/landing/app_new_new.png);">
+            <div class="titan-caption">
+              <div class="caption-content">
+
+                <div class="font-alt mb-40 titan-title-size-3">Applications</div>
+                <a class="section-scroll btn btn-border-w btn-round" href="applications.html">Learn More</a>
+              </div>
+            </div>
+          </li>
+          <li class="bg-dark-30 bg-dark" style="background-image:url(assets/images/landing/Product_new.png);">
+            <div class="titan-caption">
+              <div class="caption-content">
+                <div class="font-alt mb-40 titan-title-size-3">Products</div>
+                <a class="btn btn-border-w btn-round" href="products.html">Learn More</a>
+              </div>
+            </div>
+          </li>
+          <li class="bg-dark-30 bg-dark" style="background-image:url(assets/images/landing/Service_new.png);">
+            <div class="titan-caption">
+              <div class="caption-content">
+                <div class="font-alt mb-40 titan-title-size-3">Services</div>
+                <a class="section-scroll btn btn-border-w btn-round" href="services.html">Learn More</a>
+              </div>
+            </div>
+          </li>
+          
+        </ul>
+      </div>
+    </section> -->
+    <div class="main">
+      <section class="module" id="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+              <h2 class="module-title font-alt">Welcome to Kolben</h2>
+              <div class="module-subtitle font-serif large-text">Packaged solutions and services for a range of applications.</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-2 col-sm-offset-5">
+              <div class="large-text align-center"><a class="section-scroll" href=".parallax-bg"><i class="fa fa-angle-down"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="module bg-dark-60 gallery-page-header parallax-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+              <h2 class="module-title font-alt">Our Partners / Principles</h2>
+              <div class="module-subtitle font-serif"></div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row multi-columns-row">
+            <div class="col-sm-6 col-md-4 col-lg-4">
+              <div style="height: 200px;border-bottom: 3px solid #9c241c;" class="gallery-item">
+                <div class="gallery-image"><a class="gallery" href="http://www.pwgsrl.com/2017/en" target="_blank" title="Title 5"><img style="margin-top: 20%;" src="assets/images/landing/pwg.png" alt="Gallery Image 5"/>
+                  <div class="gallery-caption">
+                    <button class="btn btn-b btn-circle" type="submit">View More</button>
+                  </div></a></div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                <div style="height: 200px;border-bottom: 3px solid #9c241c;" class="gallery-item">
+                  <div class="gallery-image"><a class="gallery" href="http://www.psm-export.com/" target="_blank" title="Title 2"><img src="assets/images/landing/psm.png" alt="Gallery Image 2"/>
+                    <div class="gallery-caption">
+                      <button class="btn btn-b btn-circle" type="submit">View More</button>
+                    </div></a></div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                  <div style="height: 200px;border-bottom: 3px solid #9c241c;" class="gallery-item">
+                    <div class="gallery-image"><a class="gallery" href="https://www.sunfab.com/" target="_blank" title="Title 1"><img style="margin-top: 30%;" src="assets/images/landing/sunfab.png" alt="Gallery Image 1"/>
+                      <div class="gallery-caption">
+                        <button class="btn btn-b btn-circle" type="submit">View More</button>
+                      </div></a></div>
+                    </div>
+                  </div>
+                  <div style="padding-top: 50px;border-bottom: 3px solid #9c241c;" class="col-sm-6 col-md-4 col-lg-4">
+                    <div style="height: 200px;" class="gallery-item">
+                      <div class="gallery-image"><a class="gallery" href="https://www.tecnord.com/" target="_blank" title="Title 4"><img style="margin-top: 25%;" src="assets/images/landing/Tecnord.png" alt="Gallery Image 4"/>
+                        <div class="gallery-caption">
+                          <button class="btn btn-b btn-circle" type="submit">View More</button>
+                        </div></a></div>
+                      </div>
+                    </div>
+                    <div style="padding-top: 50px; margin-left: 10px; border-bottom: 3px solid #9c241c;" class="col-sm-6 col-md-4 col-lg-4">
+                      <div style="height: 200px;" class="gallery-item">
+                        <div class="gallery-image"><a class="gallery" href="http://www.delta-power.com/" target="_blank" title="Title 3"><img style="margin-top: 30%;" src="assets/images/landing/Delta.png" alt="Gallery Image 3"/>
+                          <div class="gallery-caption">
+                            <button class="btn btn-b btn-circle" type="submit">View More</button>
+                          </div></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+      <!-- <section class="module">
+        <div class="container">
+          <div class="row multi-columns-row">
+            <div class="col-sm-6 col-md-4 col-lg-4">
+              <div class="gallery-item">
+                <div class="gallery-image"><a class="gallery" href="http://www.pwgsrl.com/EN/seriec.php" target="_blank" title="Title 5"><img src="assets/images/landing/pwg.png" alt="Gallery Image 5"/>
+                  <div class="gallery-caption">
+                    <button class="btn btn-b btn-circle" type="submit">View More</button>
+                  </div></a></div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="gallery-item">
+                  <div class="gallery-image"><a class="gallery" href="http://www.psm-export.com/" target="_blank" title="Title 2"><img src="assets/images/landing/psm.png" alt="Gallery Image 2"/>
+                    <div class="gallery-caption">
+                      <button class="btn btn-b btn-circle" type="submit">View More</button>
+                    </div></a></div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                  <div class="gallery-item">
+                    <div class="gallery-image"><a class="gallery" href="https://www.sunfab.com/" target="_blank" title="Title 1"><img src="assets/images/landing/sunfab.png" alt="Gallery Image 1"/>
+                      <div class="gallery-caption">
+                        <button class="btn btn-b btn-circle" type="submit">View More</button>
+                      </div></a></div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="gallery-item">
+                      <div class="gallery-image"><a class="gallery" href="http://www.delta-power.com/" target="_blank" title="Title 3"><img src="assets/images/landing/Delta.png" alt="Gallery Image 3"/>
+                        <div class="gallery-caption">
+                          <button class="btn btn-b btn-circle" type="submit">View More</button>
+                        </div></a></div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-4">
+                      <div class="gallery-item">
+                        <div class="gallery-image"><a class="gallery" href="https://www.tecnord.com/" target="_blank" title="Title 4"><img src="assets/images/landing/Tecnord.png" alt="Gallery Image 4"/>
+                          <div class="gallery-caption">
+                            <button class="btn btn-b btn-circle" type="submit">View More</button>
+                          </div></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section> -->
+
+                <hr class="divider-w">
+
+
+                <section class="module" id="contact">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-6 col-sm-offset-3">
+                        <h2 class="module-title font-alt">Get in touch</h2>
+                        <div class="module-subtitle font-serif"></div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-6 col-sm-offset-3">
+                       <form id="contact-form" method="post" action="contact.php" role="form">
+
+                        <div class="messages"></div>
+
+                        <div class="controls">
+
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="form_name" class="footer-list-link">Name *</label>
+                                <input id="form_name" type="text" name="name" class="form-control footer-input margin-b-20" placeholder="Please enter your name *" required="required" data-error="Firstname is required.">
+                                <div class="help-block with-errors" id="error-contact"></div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="form_email" class="footer-list-link">Email *</label>
+                                <input id="form_email" type="email" name="email" class="form-control footer-input margin-b-20" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                <div class="help-block with-errors" id="error-contact"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <label for="form_message">Type Your Company Name here *</label>
+                                <input id="form_phone" type="text" name="company" class="form-control" placeholder="Your Company here" required="required" data-error="Valid Company Name is required.">
+                                <div class="help-block with-errors"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="form_subject" class="footer-list-link">Subject *</label>
+                                <input id="form_subject" type="text" name="subject" class="form-control footer-input margin-b-20" placeholder="Please enter the subject *" required="required" data-error="Valid subject is required.">
+                                <div class="help-block with-errors" id="error-contact"></div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="form_phone" class="footer-list-link">Phone</label>
+                                <input id="form_phone" type="tel" name="phone" class="form-control footer-input margin-b-20" placeholder="Please enter your phone">
+                                <div class="help-block with-errors" id="error-contact"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <label for="form_message" class="footer-list-link">Message *</label>
+                                <textarea id="form_message" name="message" class="form-control footer-input margin-b-20" placeholder="Type Your message here" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                                <div class="help-block with-errors" id="error-contact"></div>
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              <input type="submit" class="btn btn-b btn-circle text-uppercase" value="Send message">
+                            </div>
+                          </div>
+                        </div>
+
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <div class="module-small bg-dark">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="widget">
+                        <h5 class="widget-title font-alt">Kolben</h5>
+                        <p>Packaged solutions and services for a range of applications.</p>
+                        <p>Phone:<a href="tel:+91-80-29724222"> +91-80-29724222</a></p>
+                        <p>Email:<a href="mailto: marketingsupport@kolbenhydraulics.com">  marketingsupport@kolbenhydraulics.com</a></p>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="widget">
+                        <h5 class="widget-title font-alt">Quick Links</h5>
+                        <ul class="icon-list">
+                          <div class="container">
+                            <li><a href="index.html">Home </a></li>
+                            <li><a href="about.html">About Us </a></li>
+                            <li><a href="products">Products </a></li>
+                            <li><a href="services.html">Services </a></li>
+                            <li><a href="applications.html">Application </a></li>
+                            <li><a href="news">News </a></li>
+                            <li><a href="#totop">Contact </a></li>
+                            <li><a href="login.html">Login </a></li>
+                          </div>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <hr class="divider-d">
+
+              <footer class="footer bg-dark">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <p class="copyright font-alt">&copy; 2019&nbsp;Kolben Hydraulics Ltd., All Rights Reserved. Design by <a href="http://boilerplate.in" target="_blank">boilerplate</a></p>
+                    </div>
+                  </div>
+                </div>
+              </footer>
+
+            </div>
+
+            <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
+          </main>
+    <!--
+    JavaScripts
+    =============================================
+  -->
+  <script type="text/javascript">
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1} 
+        if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none"; 
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block"; 
+          dots[slideIndex-1].className += " active";
+        }
+      </script>
+      <script src="assets/lib/jquery/dist/jquery.js"></script>
+      <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="assets/lib/wow/dist/wow.js"></script>
+      <script src="assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
+      <script src="assets/lib/isotope/dist/isotope.pkgd.js"></script>
+      <script src="assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
+      <script src="assets/lib/flexslider/jquery.flexslider.js"></script>
+      <script src="assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
+      <!-- <script src="assets/lib/smoothscroll.js"></script> -->
+      <script src="assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
+      <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
+      <script src="assets/js/plugins.js"></script>
+      <script src="assets/js/main.js"></script>
+
+      <script src="assets/js/validator.js"></script>
+      <script src="assets/js/contact.js"></script>
+
+    </body>
+    </html>

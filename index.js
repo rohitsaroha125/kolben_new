@@ -23,7 +23,7 @@ var upload = multer({
 
 const MongoClient = require('mongodb').MongoClient;
 const url = "mongodb://localhost:27017";
-app.set('port', (process.env.PORT || 5002));
+app.set('port', (process.env.PORT || 80));
 app.use(express.static(__dirname + '/views/kolben_first_draft'));
 var i = 0;
 app.set('view engine', 'ejs');

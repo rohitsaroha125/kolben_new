@@ -1,10 +1,4 @@
 RewriteEngine on
-
-# redirect to 5002 if "some-prefix/" is matched
-RewriteCond %{SERVER_PORT} !^5002$
-RewriteRule ^some-prefix/(.*[^/])/?$ http://%{HTTP_HOST}:5002/some-prefix/$1/ [R=301,L]
-
-# redirect with trailing slash if not an existing file and no trailing slash
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_URI} !/$
-RewriteRule ^(.*)$ /$1/ [R=301,L]
+RewriteCond %{HTTP_HOST} ^kolbenhydraulics.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www.kolbenhydraulics.com$
+RewriteRule ^.*$ "http\:\/\/127\.0\.0\.1\:5002%{REQUEST_URI}" [P,QSA,L]

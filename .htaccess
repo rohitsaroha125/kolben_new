@@ -1,2 +1,2 @@
 RewriteCond %{HTTP_HOST} ^www\.(.*) [NC]
-RewriteRule / $ http://kolbenhydraulics.com:5002/$1 [P,QSA,L]
+RewriteRule \. $ http://kolbenhydraulics.com:5002/$1 [P,QSA,L]

@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^kolbenhydraulics.com
+RewriteRule (.*) http://www.kolbenhydraulics.com/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^www\.kolbenhydraulics\.com$
+RewriteCond %{REQUEST_URI} !^/WebProjectFolder/
+RewriteRule (.*) /WebProjectFolder/$1

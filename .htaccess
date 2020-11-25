@@ -1,4 +1,0 @@
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^kolbenhydraulics.com$ [OR]
-RewriteCond %{HTTP_HOST} ^www.kolbenhydraulics.com$
-RewriteRule ^.*$ "http\:\/\/127\.0\.0\.1\:5002%{REQUEST_URI}" [P,QSA,L]
